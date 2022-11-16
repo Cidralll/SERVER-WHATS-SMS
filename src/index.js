@@ -14,7 +14,8 @@ setInterval(function(){
    
     console.log(`${hour}:${minute}:${second}`)
 
-    if (`${hour}:${minute}:${second}` === '11:08:50') {
+    let time = process.env.TIME;
+    if (`${hour}:${minute}:${second}` === time) {
         Send()
     }
 },1000)
