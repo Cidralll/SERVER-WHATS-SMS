@@ -2,7 +2,7 @@ const axios = require('axios')
 require('dotenv').config()
 const number = process.env.NUMBER;
 const message = process.env.MESSAGE;
-const url = process.env.URL
+const url = process.env.URL_SEND
 
 async function Post(url, body) {
     axios.post(`${url}`, body)
