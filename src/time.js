@@ -19,8 +19,6 @@ module.exports = {
             minute = addZero(minute);
             second = addZero(second);
         
-        
-            console.clear()
             console.log(`${hour}:${minute}:${second}`)
         
             let time = process.env.TIME;
