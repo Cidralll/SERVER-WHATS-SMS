@@ -1,6 +1,8 @@
 const { Send } = require('./send/send.js');
 require('dotenv').config()
 
+console.log('Servidor rodando!')
+
 setInterval(function(){
     
     let newDate = new Date();
@@ -11,8 +13,6 @@ setInterval(function(){
     hour = addZero(hour);
     minute = addZero(minute);
     second = addZero(second);
-   
-    console.log(`${hour}:${minute}:${second}`)
 
     let time = process.env.TIME;
     if (`${hour}:${minute}:${second}` === time) {
