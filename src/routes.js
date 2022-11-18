@@ -7,5 +7,4 @@ router.get('/', function(req, res) {
     //Time()
     res.send("Pag de envio")
 })
-
 module.exports = router
