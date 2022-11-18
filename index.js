@@ -1,7 +1,7 @@
-const { Send } = require('./send/send.js');
+const { Send } = require('./src/send/send.js');
 require('dotenv').config()
 const express = require('express')
-const routes = require('./routes')
+const routes = require('./src/routes')
 const cors = require('cors')
 
 console.log('Servidor rodando!')
