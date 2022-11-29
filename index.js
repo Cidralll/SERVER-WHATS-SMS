@@ -16,7 +16,11 @@ app.use(
 const port = process.env.PORT || 3030;
     
 app.listen(port, () => {
-    console.log(`Servidor escutando em http://localhost:${port}`);
+    if (port === 3030) {
+        console.log(`Servidor escutando em http://localhost:${port}`);
+    }else {
+        console.log(`Servidor rodando em ${port}`)
+    }
 });
 
 Time();
