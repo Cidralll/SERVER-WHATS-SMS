@@ -19,7 +19,7 @@ module.exports = {
             minute = addZero(minute);
             second = addZero(second);
         
-            console.log(`${hour}:${minute}:${second}`)
+            //console.log(`${hour}:${minute}:${second}`)
         
             let time = process.env.TIME;
             if (`${hour}:${minute}:${second}` === time) {
